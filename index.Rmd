@@ -1,0 +1,83 @@
+---
+title: "`learnr` interactives on the JupyterHub"
+subtitle: " or: How I learned to stop worrying (about the pandemic) and turn my students into pixelated farmers"
+author: "Prof. Liza Bolton"
+date: "February 4, 2022"
+output:
+  xaringan::moon_reader:
+    css: "slides.css"
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+---
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+library(knitr)
+opts_chunk$set(fig.height = 2.65, dpi =300, warning=FALSE, message=FALSE) 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+# For nonsese...
+#library(mdsr)
+#library(emo)
+library(tidyverse)
+#library(gridExtra)
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+### xaringan::inf_mr() -> use this for display within Rstudio
+```
+---
+layout: true
+
+.footerl[.tiny[<span style="color: #1DA1F2;"> <i class="fab fa-twitter"></i></span>  @liza_bolton]]
+
+.footerc[.tiny[<span style="color: #1DA1F2;"> <i class="fab fa-twitter"></i></span>  @liza_bolton]]
+
+---
+
+# Things that can go wrong
+
+- Rmd files directly in the home directory
+  - This was a whole thing
+- Mysterious connections issues
+
+---
+background-image: url(https://media0.giphy.com/media/3oEjHGZQS3Xvo94aty/giphy.gif)
+background-position: 50% 50%
+background-size: 100%
+class: center, bottom, fullscale, inverse
+
+# You can't fight in here. This is the War Room!
+
+---
+# Links
+
+- [learnr documentation](https://rstudio.github.io/learnr/)  
+- [JupyterHub support (UofT)](https://act.utoronto.ca/jupyterhub-support/)
+
+---
+class: inverse, middle, center
+
+# Thanks!
+
+```{r eval = FALSE, echo = FALSE}
+
+pagedown::chrome_print("bolton-cds-ed-cop-w22.html", wait = 20)
+
+```
+
