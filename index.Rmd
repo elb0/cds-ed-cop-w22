@@ -1,6 +1,6 @@
 ---
-title: "`learnr` interactives on the JupyterHub"
-subtitle: " or: How I learned to stop worrying (about the pandemic) and turn my students into pixelated farmers"
+title: "`learnr` Interactives"
+subtitle: " or: How I Learned to Stop Worrying and Turn my Students into Pixelated Farmers"
 author: "Prof. Liza Bolton"
 date: "February 4, 2022"
 output:
@@ -41,20 +41,21 @@ library(tidyverse)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ### xaringan::inf_mr() -> use this for display within Rstudio
 ```
----
+
 layout: true
 
-.footerl[.tiny[<span style="color: #1DA1F2;"> <i class="fab fa-twitter"></i></span>  @liza_bolton]]
+.footerl[.tiny[https://bolton-cds-w22.netlify.app/]]
 
 .footerc[.tiny[<span style="color: #1DA1F2;"> <i class="fab fa-twitter"></i></span>  @liza_bolton]]
 
 ---
+# Statdew Valley: my favourite use
 
-# Things that can go wrong
+```{r, out.width="60%", fig.align='center', echo=FALSE}
+knitr::include_graphics("img/statdewvalley.png")
+```
 
-- Rmd files directly in the home directory
-  - This was a whole thing
-- Mysterious connections issues
+
 
 ---
 background-image: url(https://media0.giphy.com/media/3oEjHGZQS3Xvo94aty/giphy.gif)
@@ -65,6 +66,71 @@ class: center, bottom, fullscale, inverse
 # You can't fight in here. This is the War Room!
 
 ---
+## But shouldn't the learners learn to code \~properly\~ in R?
+
+--
+Of course!
+
+--
+It isn't very impressive for our students to go to their future employers/grad schools and say, sure I can code in R, but only if you set up a nice interactive template for me. I don't know how to load data, format outputs or conduct a full analysis.
+
+--
+A big priority in all the courses I am involved with is ensuring students can write up useful, reproducible reports with RMarkdown. BUT these types of of interactive activities clear out the other considerations and let learners focus in on concepts and highlight specific skills, functions, etc.
+
+So, no (unnecessary) coding in here. This is the Code Tutorial!
+
+
+---
+# Course context
+
+.pull-left[
+
+With planning for
+
+]
+
+- Interactive activities for team-based learning 
+  - I set up an acitivty with learnr on the JupyterHub
+
+---
+# The workflow
+
+
+
+---
+# Why this makes your life easier
+
+- No fussing with students needing to download files and navigate the (sometimes) terrifying permissions, files structures and other pains of their local machine.
+
+---
+# (Possible) barriers
+
+- Git & GitHub: You don't have to be a Git power user to make this work for you. GitHub desktop and uploading straight to website are perfectly reasonable workflows. 
+ - If you want to be a 
+
+---
+# Things that can go wrong
+
+### Tech
+- Rmd files directly in the home directory
+  - This was a whole thing
+- Mysterious connections issues
+
+### Students
+
+- This is not a PDF. This means that for some students this is outside their comfort zone for notetaking. Talking about how you're intending them to use these activities and learn from them 
+
+---
+# Tips
+
+- Plan to spend some time in a first class (or likely two) showing students the main troubleshooting options
+  - CLose all other interatives
+  - Check no there are no naked Rmd in your Home Directory
+  - Delete and pull again
+  - Go in the back way 
+
+
+---
 # Links
 
 - [learnr documentation](https://rstudio.github.io/learnr/)  
@@ -73,7 +139,9 @@ class: center, bottom, fullscale, inverse
 ---
 class: inverse, middle, center
 
-# Thanks!
+# 🎵 We'll meet again, don't know where, don't know when 🎵
+
+But email me in the meantime: liza.bolton@utoronto.ca
 
 ```{r eval = FALSE, echo = FALSE}
 

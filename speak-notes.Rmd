@@ -1,0 +1,14 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Hi folks,
+
+My part of today is called **`learnr` Interactives or: How I Learned to Stop Worrying and Turn my Students into Pixelated Farmers**.
+
+Now, I've started well by completely lying to you. I have most certaintly not managed to stop worrying and only a few of my students turned into pixelated farmers. But what I wanted to share today was my experience with leveraging my R and RMarkdown skills to be able to create easy to deploy interactive tutorials and class activities for students, all while getting to lean in to the creative silliness that has either been what is keeping me sane through the pandemic, or the best evidence of my insanity.
+
+You can access my slides directly here [link], but I will also pop any relevant links in chat.
+
+
