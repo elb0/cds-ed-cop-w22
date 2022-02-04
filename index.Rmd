@@ -51,11 +51,11 @@ layout: true
 ---
 # Caveat
 
-I'm coming to you as a jack of ~all~ some trades and master of none. Nothing I'm about to talk about is necessarily the BEST way to do anything, but I hope seeing what I can manage inspires you to realize just how possible anything that catches your eye here is for you!
+I'm coming to you as a jack of ~~all~~ some trades and master of none. Nothing I'm about to talk about is necessarily the BEST way to do anything, but I hope seeing what I can manage inspires you to realize just how possible anything that catches your eye here is for you!
 
 # Accessibility note
 
-You can find
+You can find my slides and images descriptions [here](https://blog.lizabolton.com/posts/2022-02-04-learnr-interactives-or-how-i-learned-to-stop-worrying-and-turn-my-students-into-pixelated-farmers/).
 
 ---
 # Statdew Valley: my favourite use
@@ -72,7 +72,7 @@ knitr::include_graphics("img/statdewvalley.png")
 
 You're grandmother has asked you to take over her old farm plot in _Statdew Valley_. Armed with statistical knowledge, you set out to begin your new life!
 
-There are two of datasets for you to analyse to better understand the operation of your farm.
+There are two of datasets for you to analyze to better understand the operation of your farm.
 
 Note: The final 'hint' for code chunks will be the solution.
 
@@ -184,7 +184,7 @@ Some learners find it hard to motivate themselves with asynch content, so making
 ---
 ### Assessments: Abundance of caution
 
-.midi[There are a few common problems that are easy to teach students to solve, but there are occasionally connection issues that I can't get to the bottom of.  With this in mind, I don't use these activities for __timed assessments__, other than the optional, graded group Team Up! acitvities, where usually one team member can make it work (and Team Up! activities are just _one_ way to earn the possible marks).]
+.midi[There are a few common problems that are easy to teach students to solve, but there are occasionally connection issues that I can't get to the bottom of.  With this in mind, I don't use these activities for __timed assessments__, other than the optional, graded group Team Up! activities, where usually one team member can make it work (and Team Up! activities are just _one_ way to earn the possible marks).]
 
 ```{r, out.width="35%", fig.align='center', echo=FALSE}
 knitr::include_graphics("https://pbs.twimg.com/media/ETGENaMWAAA7pg_?format=jpg&name=medium")
@@ -224,15 +224,15 @@ knitr::include_graphics("img/nbgitpuller.png")
 ## nbgitpuller (key text)
 
 - JupyterHub URL: `https://jupyter.utoronto.ca`   
-- Branch: `master` .hihglight[(check this on your GitHub! Use `main` instead of `master` for [new GitHub repositories](https://github.blog/changelog/2020-10-01-the-default-branch-for-newly-created-repositories-is-now-main/))]  
+- Branch: `master` .highlight[(check this on your GitHub! Use `main` instead of `master` for [new GitHub repositories](https://github.blog/changelog/2020-10-01-the-default-branch-for-newly-created-repositories-is-now-main/))]  
 - Git Repository URL: `https://github.com/sta303-bolton/sta303-w22-activities` .highlight[should be the top-level of the repo on github, not a subfolder]  
-- Custom URL: `shiny/sta303-w22-activities/inst/tutorials/sta303_m3_statdew/sta303_m3_statdew-valley.Rmd` .highlight[stucture should be: `shiny/repo-name/path-to-rmd/rmd-file.rmd`]
+- Custom URL: `shiny/sta303-w22-activities/inst/tutorials/sta303_m3_statdew/sta303_m3_statdew-valley.Rmd` .highlight[structure should be: `shiny/repo-name/path-to-rmd/rmd-file.rmd`]
 
 ---
 # Tips
 
 - Plan to spend some time in a first class (or likely two) showing students the main troubleshooting options. Here are my top things to check:
-  - Close all other interatives
+  - Close all other interactives
   - Check no there are no naked Rmd in your Home Directory
   - Delete and pull again
   - Go in the back way 
