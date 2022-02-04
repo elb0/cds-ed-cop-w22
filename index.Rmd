@@ -233,9 +233,9 @@ knitr::include_graphics("img/nbgitpuller.png")
 
 - Plan to spend some time in a first class (or likely two) showing students the main troubleshooting options. Here are my top things to check:
   - Close all other interactives
-  - Check no there are no naked Rmd in your Home Directory
+  - Check there are no naked Rmd in your Home Directory
   - Delete and pull again
-  - Go in the back way 
+  - Go in the back way (run from the Rmd directly)
 
 ---
 # MarkUs
