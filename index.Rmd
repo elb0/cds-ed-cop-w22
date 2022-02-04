@@ -256,6 +256,7 @@ I am so excited about the potential and how well it matches my course's needs. W
 
 - [`learnr` documentation](https://rstudio.github.io/learnr/)  
 - [JupyterHub support (UofT)](https://act.utoronto.ca/jupyterhub-support/)  
+- [JupyterHub guide with gifs I made for my students](https://rstudio-with-jupyerhub-uoft.netlify.app/)
 - [`nbgitpuller` for making pull links](https://jupyterhub.github.io/nbgitpuller/link)  
 - [Happy Git with R](https://happygitwithr.com/index.html)
 - [Statdew Valley interactive](https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&urlpath=shiny%2Fsta303-w22-activities%2Finst%2Ftutorials%2Fsta303_m3_statdew%2Fsta303_m3_statdew-valley.Rmd&branch=master)
