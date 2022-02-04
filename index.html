@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>learnr interactives on the JupyterHub</title>
+    <title>learnr Interactives</title>
     <meta charset="utf-8" />
     <meta name="author" content="Prof. Liza Bolton" />
     <meta name="date" content="2022-02-04" />
@@ -14,8 +14,8 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# <code>learnr</code> interactives on the JupyterHub
-## or: How I learned to stop worrying (about the pandemic) and turn my students into pixelated farmers
+# <code>learnr</code> Interactives
+## or: How I Learned to Stop Worrying and Turn my Students into Pixelated Farmers
 ### Prof. Liza Bolton
 ### February 4, 2022
 
@@ -31,10 +31,37 @@ layout: true
 .footerc[.tiny[&lt;span style="color: #1DA1F2;"&gt; &lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/span&gt;  @liza_bolton]]
 
 ---
-# Statdew Valley: my favourite case study
+# Statdew Valley: my favourite use
 
-&lt;img src="img/statdewvalley.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/statdewvalley.png" width="55%" style="display: block; margin: auto;" /&gt;
 
+  &lt;div class="btn" style="background: #612464; border: none; height: 50px; margin: 5px; text-align: center;"&gt;&lt;span style="font-size: 20pt;"&gt;&lt;a style="text-decoration: none;" href="https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&amp;urlpath=shiny%2Fsta303-w22-activities%2Finst%2Ftutorials%2Fsta303_m3_statdew%2Fsta303_m3_statdew-valley.Rmd&amp;branch=master"&gt;&lt;span style="color: #ffffff;"&gt;&lt;strong&gt;Open the activity on the JupyterHub&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+---
+## (From the activity) Welcome to Statdew Valley!
+
+You're grandmother has asked you to take over her old farm plot in _Statdew Valley_. Armed with statistical knowledge, you set out to begin your new life!
+
+There are two of datasets for you to analyse to better understand the operation of your farm.
+
+Note: The final 'hint' for code chunks will be the solution.
+
+_Yes, this is totally an homage to [Stardew Valley](https://www.stardewvalley.net/). Have I played? No, but à la Girlfriend Reviews on YouTube, this is based on "what it's like to live with someone who plays Stardew Valley."_
+
+---
+## What is in this activity?
+
+.pull-left[
+- [Optional] image manipulation with R ( to create a 16 (ish) bit player avatar from a picture)  
+  - You can use R for so much more than just running regressions!
+- Areas to write code (with hints and solutions)
+- Multi-choice questions (ungraded) with commentary so learners can check if they are on the right track, but also to bring attention to important features
+- Egregious bee puns and B(ee)TS references]
+
+.pull-right[
+&lt;img src="img/lb-example.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
 
 
 ---
@@ -49,79 +76,144 @@ class: center, bottom, fullscale, inverse
 ## But shouldn't the learners learn to code \~properly\~ in R?
 
 --
-Of course!
+__Of course!__
 
 --
-It isn't very impressive for our students to go to their future employers/grad schools and say, sure I can code in R, but only if you set up a nice interactive template for me. I don't know how to load data, format outputs or conduct a full analysis.
+It isn't very impressive for our students to go to their future employers/grad schools and say, sure I can code in R, but only if you set up a nice interactive template for me. I don't know how to load data, format outputs or conduct a full analysis.  
+&lt;br&gt;
 
 --
 A big priority in all the courses I am involved with is ensuring students can write up useful, reproducible reports with RMarkdown. BUT these types of of interactive activities clear out the other considerations and let learners focus in on concepts and highlight specific skills, functions, etc.
+&lt;br&gt;
+&lt;br&gt;
 
 So, no (unnecessary) coding in here. This is the Code Tutorial!
 
 
 ---
-# Course context
+# Course context (STA303)
+
+.midi[
+&lt;span style="color: #612464;"&gt;&lt;i class="fas fa-file-alt"&gt;&lt;/i&gt; [Syllabus](https://sta303-bolton.github.io/sta303-w22-courseguide/other-files/STA303-1002_W22_syllabus.pdf)&lt;/span&gt;
 
 .pull-left[
 
-With planning for
+Students engage with __asynchronous activities__, BEFORE synchronous activities.
+
+Goals of __synchronous classes__: develop group problem solving skills, practise talking about stats, build a sense of class community and focus attention on tricky concepts and assessments.
+
+Some learners find it hard to motivate themselves with asynch content, so making it more interactive can help.
 
 ]
 
+.pull-right[
+### Our uses
+
+- Asynchronous tutorials/activities  
+   - Students can self pace  
+   - Prompted to check their understanding actively, not passively
 - Interactive activities for team-based learning 
-  - I set up an acitivty with learnr on the JupyterHub
+  - I set up an activity with learnr on the JupyterHub
+  - [Team Up!](https://q.utoronto.ca/courses/46670/pages/integration-team-up-for-instructors)
+]]
 
 ---
-# The workflow
+# Why this makes your life easier and you should totally try it
 
+- __`learnr`__: Make fun interactive activities, using the coding skills you already have (or are working on developing).
 
+- __JupyterHub__: No fussing with students needing to download files and navigate the (sometimes) terrifying permissions, files structures and other pains of their local machine. **You provide a link and the activity loads in their browser.**
 
----
-# Why this makes your life easier
-
-- No fussing with students needing to download files and navigate the (sometimes) terrifying permissions, files structures and other pains of their local machine.
+- __All__: Easy to improve, remix and reuse semester to semester. Unleash your creativity.
 
 ---
 # (Possible) barriers
 
-- Git &amp; GitHub: You don't have to be a Git power user to make this work for you. GitHub desktop and uploading straight to website are perfectly reasonable workflows. 
- - If you want to be a 
+- __Git &amp; GitHub__: You don't have to be a Git power user to make this work for you. GitHub desktop and uploading straight to website are perfectly reasonable workflows. 
+- __HTML &amp; CSS__: There are certain things that can be easier or more easily customized if you have a basic comfort with HTML and CSS, but these are pretty easy to pick up as you go from the resources and other people's templates,
+- __Not an R user__: Become an R user! 😉 
 
 ---
-# Things that can go wrong
+## Things that can go wrong
 
+.pull-left[
 ### Tech
-- Rmd files directly in the home directory
+- Rmd files directly in the student's home directory
   - This was a whole thing
-- Mysterious connections issues
+- Mysterious connection issues and loading lags
+]
 
+.pull-right[
 ### Students
 
-- This is not a PDF. This means that for some students this is outside their comfort zone for notetaking. Talking about how you're intending them to use these activities and learn from them 
+- This is not a PDF. This means that for some students this is outside their comfort zone or preferences for note taking. 
+  - Suggestion: Talk about how you're intending for them to use these activities and learn from them. Connect students to [learning strategists](https://studentlife.utoronto.ca/service/learning-strategist-appointments/) who can coach them on effective note taking.
+]
+
+---
+### Assessments: Abundance of caution
+
+.midi[There are a few common problems that are easy to teach students to solve, but there are occasionally connection issues that I can't get to the bottom of.  With this in mind, I don't use these activities for __timed assessments__, other than the optional, graded group Team Up! acitvities, where usually one team member can make it work (and Team Up! activities are just _one_ way to earn the possible marks).]
+
+&lt;img src="https://pbs.twimg.com/media/ETGENaMWAAA7pg_?format=jpg&amp;name=medium" width="35%" style="display: block; margin: auto;" /&gt;
+
+
+.footnote[A *bun* dance...of caution]
+
+---
+# The workflow
+
+&lt;img src="img/workflow.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+## Git and GitHub for R users
+
+&lt;img src="https://happygitwithr.com/img/watch-me-diff-watch-me-rebase-smaller.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+
+  &lt;div class="btn" style="background: #612464; border: none; height: 50px; margin: 5px; text-align: center;"&gt;&lt;span style="font-size: 20pt;"&gt;&lt;a style="text-decoration: none;" href="https://happygitwithr.com/index.html"&gt;&lt;span style="color: #ffffff;"&gt;&lt;strong&gt;Happy Git with R&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+"Happy Git and GitHub for the useR" was written by Jenny Bryan, the STAT 545 TAs, Jim Hester.
+
+---
+## nbgitpuller
+
+&lt;img src="img/nbgitpuller.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+## nbgitpuller (key text)
+
+- JupyterHub URL: `https://jupyter.utoronto.ca`   
+- Branch: `master` .hihglight[(check this on your GitHub! Use `main` instead of `master` for [new GitHub repositories](https://github.blog/changelog/2020-10-01-the-default-branch-for-newly-created-repositories-is-now-main/))]  
+- Git Repository URL: `https://github.com/sta303-bolton/sta303-w22-activities` .highlight[should be the top-level of the repo on github, not a subfolder]  
+- Custom URL: `shiny/sta303-w22-activities/inst/tutorials/sta303_m3_statdew/sta303_m3_statdew-valley.Rmd` .highlight[stucture should be: `shiny/repo-name/path-to-rmd/rmd-file.rmd`]
 
 ---
 # Tips
 
-- Plan to spend some time in a first class (or likely two) showing students the main troubleshooting options
-  - CLose all other interatives
+- Plan to spend some time in a first class (or likely two) showing students the main troubleshooting options. Here are my top things to check:
+  - Close all other interatives
   - Check no there are no naked Rmd in your Home Directory
   - Delete and pull again
   - Go in the back way 
 
-
 ---
 # Links
 
-- [learnr documentation](https://rstudio.github.io/learnr/)  
-- [JupyterHub support (UofT)](https://act.utoronto.ca/jupyterhub-support/)
+- [`learnr` documentation](https://rstudio.github.io/learnr/)  
+- [JupyterHub support (UofT)](https://act.utoronto.ca/jupyterhub-support/)  
+- [`nbgitpuller` for making pull links](https://jupyterhub.github.io/nbgitpuller/link)  
+- [Happy Git with R](https://happygitwithr.com/index.html)
+- [Statdew Valley interactive](https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsta303-bolton%2Fsta303-w22-activities&amp;urlpath=shiny%2Fsta303-w22-activities%2Finst%2Ftutorials%2Fsta303_m3_statdew%2Fsta303_m3_statdew-valley.Rmd&amp;branch=master)
+- [StatDew Valley on GitHub](https://github.com/sta303-bolton/sta303-w22-activities/tree/master/inst/tutorials/sta303_m3_statdew)
 
 ---
 class: inverse, middle, center
 
-# We'll meet again, don't know where, don't know when
+# 🎵 We'll meet again, don't know where, don't know when 🎵
 
-But feel free to email me in the meantime: liza.bolton@utoronto.ca
+But email me in the meantime: liza.bolton@utoronto.ca
 
 
 
